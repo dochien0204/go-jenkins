@@ -12,6 +12,7 @@ pipeline {
             steps {
                 sh 'cd .. && ls && cd go-program && ls'
                 sh 'go build'
+                sh 'go run main.go'
             }
         }
     }
